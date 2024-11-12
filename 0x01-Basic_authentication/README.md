@@ -1,7 +1,11 @@
-Basic authentication
+Simple API
+Simple HTTP API for playing with User model.
 
-Basic" authentication the credentials are constructed by first combining the username and the password with a colon (aladdin:opensesame), and then by encoding the resulting string in base64 (YWxhZGRpbjpvcGVuc2VzYW1l).
-
-The HTTP Authorization request header can be used to provide credentials that authenticate a user agent with a server, allowing access to a protected resource.
-
-In computer programming, Base64 is a group of binary-to-text encoding schemes that transforms binary data into a sequence of printable characters, limited to a set of 64 unique characters. More specifically, the source binary data is taken 6 bits at a time, then this group of 6 bits is mapped to one of 64 unique characters.
+Files
+models/
+base.py: base of all models of the API - handle serialization to file
+user.py: user model
+api/v1
+app.py: entry point of the API
+views/index.py: basic endpoints of the API: /status and /stats
+views/users.py: all users endpoints
