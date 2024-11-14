@@ -63,3 +63,4 @@ def logout():
         abort(404)
 
     return jsonify({}), 200
+
